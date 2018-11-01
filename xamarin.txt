@@ -8,3 +8,8 @@ pdf pw : 1222
 Activity - viewcontroller
 
 viewcontroller가 Content View Hierarchy를 관리
+
+img파일(resource들)은 공통프로젝트에만 추가 
+
+ios asset catalog 
+공통프로젝트에 이미지 추가 - 빌드작업(프로젝트 포함 선택!)

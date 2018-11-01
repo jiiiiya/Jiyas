@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App3"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+             x:Class="App3.MainPage">
+
+    <Grid BindingContext="{x:Static sys:DateTime.Now}" HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="{Binding Year, StringFormat='{0}년'}" Grid.Row="0" Grid.Column="0"/>
+        <Label Text="{Binding Month, StringFormat='{0}월'}" Grid.Row="0" Grid.Column="1"/>
+        <Label Text="{Binding Day, StringFormat='{0}일'}" Grid.Row="0" Grid.Column="2"/>
+        <Label Text="{Binding StringFormat='time is {0:T}'}" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <TimePicker x:Name="timepicker" Time="{Binding TimeOfDay}" Grid.Row="2" Grid.ColumnSpan="3"/>
+    </Grid>
+</ContentPage>
