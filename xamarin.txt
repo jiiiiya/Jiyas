@@ -1,0 +1,10 @@
+mac 연결
+byeongcheolgim
+TopCredu01
+
+pdf pw : 1222
+
+
+Activity - viewcontroller
+
+viewcontroller가 Content View Hierarchy를 관리
